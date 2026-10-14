@@ -2,7 +2,7 @@
 name = "quiz-programacao"
 version = "0.1.0"
 description = "Quiz de programação com gamificação"
-requires-python = ">=3.14"
+requires-python = ">=3.12"
 dependencies = [
     "fastapi>=0.115",
     "uvicorn>=0.34",
@@ -24,4 +24,9 @@ markers = [
     "unit: testes unitários",
     "integration: testes de integração",
     "e2e: testes end-to-end",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.17.0",
 ]
